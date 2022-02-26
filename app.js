@@ -17,13 +17,13 @@ app.use('/img', express.static("C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\
 
 //routes
 const userRouter = require('./server/routes/user')
-// const postRouter = require('./server/routes/post')
+const homeRouter = require('./server/routes/home')
 const authRouter = require('./server/routes/auth')
 const profileRouter = require('./server/routes/profile')
 
 app.use('/api/v1/user', userRouter)
 app.use('/api/v1/auth', authRouter)
-// app.use('/api/v1/post', postRouter)
+app.use('/api/v1/home', homeRouter)
 app.use('/api/v1/profile', profileRouter);
 
 //connecting database
