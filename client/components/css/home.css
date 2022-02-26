@@ -7,13 +7,15 @@
 }
 
 body {
-  background: #f2f4f8;
+  /* background: #f2f4f8; */
   font-family: "Open Sans";
   overflow-x: hidden;
+  background-color: #ffcfdf;
+  background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
 }
 
 .head {
-  background-image: url("../images/bg.jpeg");
+  background-image: url("../../images/bg.jpeg");
 
   /* background-image: url("../img/bg.jpeg"); */
   background-color: #cccccc;
@@ -59,12 +61,11 @@ body {
   align-items: center;
   justify-content: space-between;
   transform: translate(3%, 0);
-  position: relative;
-  top: 200px;
+  margin: 0 auto;
 }
 
 .cards .card {
-  width: 150px;
+  width: 100px;
   height: 250px;
   flex: 1;
   display: flex;
@@ -72,5 +73,21 @@ body {
   align-items: center;
   justify-content: center;
   margin: 30px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+
+  /* GLASS */
+  /* background: rgba(244, 229, 229, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18); */
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.41);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  border: 1px solid rgba(255, 255, 255, 0.29);
 }
