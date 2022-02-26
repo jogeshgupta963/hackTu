@@ -1,0 +1,40 @@
+.head {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../images/thaparBg.webp");
+  background-color: #cccccc;
+  opacity: 0.9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+.bg {
+  background-color: white;
+  position: absolute;
+  opacity: 0.5;
+  bottom: 50%;
+  /* left: 10px; */
+  /* max-width: 50%; */
+  /* margin: auto; */
+  height: 20%;
+  padding: 10px 50%;
+  border-radius: 60px;
+  overflow-x: hidden;
+}
+.container {
+  color: black;
+  position: absolute;
+  bottom: 50%;
+  font-size: 50px;
+  font-weight: bolder;
+  border-radius: 20px;
+  padding: 50px 50px 50px 50px;
+}
