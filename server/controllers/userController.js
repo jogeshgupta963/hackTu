@@ -13,7 +13,7 @@ require("dotenv").config()
 //get signup page
 function getSignup(req, res) {
 
-    res.sendFile(path.join(__dirname, "../public/", "index.html"));
+    res.sendFile("C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\hackTu\\client\\index.html");
 }
 
 
@@ -75,4 +75,4 @@ async function postSignup(req, res) {
     }
 }
 
-module.exports = { postSignup } 
+module.exports = { getSignup, postSignup } 

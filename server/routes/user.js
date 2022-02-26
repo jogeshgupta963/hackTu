@@ -9,7 +9,7 @@ const userRouter = express.Router()
 //
 userRouter
     .route('/')
-    // .get(getSignup)
+    .get(getSignup)
     .post(validation, postSignup)
 
 module.exports = userRouter
