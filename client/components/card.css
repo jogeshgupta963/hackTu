@@ -3,9 +3,9 @@
   text-decoration: none;
 }
 .card {
-  /* position: absolute;
-  top: 50%;*/
-  left: 50%;
+  position: relative;
+  top: 200px;
+  left: 200px;
   height: 400px;
   width: 300px;
   transform: translate(-50%, -50%);
@@ -13,6 +13,7 @@
   perspective: 600px;
   transition: 0.5s;
   overflow: hidden;
+  margin-top: 20px;
 }
 .card:hover .card-front {
   transform: rotateX(-180deg);
