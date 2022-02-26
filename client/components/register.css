@@ -5,7 +5,8 @@
 }
 
 body {
-  background-image: url("../images/bg.jpeg");
+  /* background-image: url("../images/bg.jpeg"); */
+  background-image: url("../img/bg.jpeg");
   background-color: #cccccc;
   height: 500px;
   background-position: center;

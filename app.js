@@ -11,16 +11,19 @@ const app = express()
 app.use(express.json());
 app.use(cookieParser())
 app.use(cors());
+app.use('/css', express.static("C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\hackTu\\client\\components"))
+app.use('/js', express.static("C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\hackTu\\client\\components\\"))
+app.use('/img', express.static("C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\hackTu\\client\\images"))
 
 //routes
 const userRouter = require('./server/routes/user')
-const postRouter = require('./server/routes/post')
+// const postRouter = require('./server/routes/post')
 const authRouter = require('./server/routes/auth')
 const profileRouter = require('./server/routes/profile')
 
 app.use('/api/v1/user', userRouter)
 app.use('/api/v1/auth', authRouter)
-app.use('/api/v1/post', postRouter)
+// app.use('/api/v1/post', postRouter)
 app.use('/api/v1/profile', profileRouter);
 
 //connecting database
