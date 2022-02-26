@@ -1,7 +1,7 @@
 const express = require("express")
 const { jwtVerify, authData } = require('../helper/authHelper')
 // const { getProfile, saveProfile } = require('../controllers/profileController')
-const { getProfile, postProfile, getAllProfiles } = require('../controllers/profile')
+const { getProfile, postProfile, getAllProfiles } = require('../controllers/profileController')
 
 const profileRouter = express.Router()
 

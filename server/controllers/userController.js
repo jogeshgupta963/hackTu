@@ -5,14 +5,31 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken');
 const cookieParser = require("cookie-parser")
 const nodemailer = require('nodemailer')
-
+const path = require('path')
 const userModel = require('../model/userModel')
 require("dotenv").config()
+
+
+//get signup page
+function getSignup(req, res) {
+
+    res.sendFile(path.join(__dirname, "../public/", "index.html"));
+}
+
 
 async function postSignup(req, res) {
     try {
 
-        let { name, email, password } = req.body
+
+
+        let { name, email, password, college } = req.body
+
+        //check college
+        let clg = email.split("@")[1].split[0];
+        if (clg != college) {
+            return res.status(400).json("college email doesnt match")
+        }
+
         //gravatar 
         const avatar = gravatar.url(email, {
             s: '200',

@@ -8,9 +8,6 @@ const profileSchema = mongoose.Schema({
     company: {
         type: String
     },
-    website: {
-        type: String
-    },
     location: {
         type: String
     },
@@ -66,10 +63,6 @@ const profileSchema = mongoose.Schema({
                 type: String,
                 required: true
             },
-            fieldOfStudy: {
-                type: String,
-                required: true
-            },
             from: {
                 type: Date,
                 required: true
@@ -106,6 +99,15 @@ const profileSchema = mongoose.Schema({
         github: {
             type: String
         },
+        hackerRank: {
+            type: String
+        },
+        codechef: {
+            type: String
+        },
+        website: {
+            type: String
+        }
     },
     date: {
         type: Date,

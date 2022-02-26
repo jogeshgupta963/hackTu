@@ -19,6 +19,8 @@ async function login(req, res) {
 
 async function postLogin(req, res) {
     try {
+
+
         const { email, password } = req.body;
         const user = await userModel.findOne({ email })
         if (!user) {
